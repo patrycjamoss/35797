@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:white;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.item{
+    flex-basis: 250px;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+#header{
+    flex-basis: 100%;
+    background-color: red;
+    align-self: flex-start;
+}
+
+#left{
+    flex-basis: 25%;
+    background-color: green;
+}
+
+#right{
+    flex-basis: 25%;
+    background-color: palevioletred;
+}
+
+#paragraf{
+    flex-basis: 50%;
+    background-color:deepskyblue;
+    margin: 0;   
+}
+
+#footer{
+    flex-basis: 100%;
+    background-color:blueviolet;
+    align-self: flex-end;  
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+}
