@@ -28,6 +28,7 @@
 #left{
     flex-basis: 25%;
     background-color: green;
+    
 }
 
 #right{
@@ -51,10 +52,33 @@
     .container{
         width: 100%;
     }
+    #left {
+        flex-basis: 100%;
+        order: 4;
+    }
+    #paragraf {
+        flex-basis: 75%;
+        order: 1;
+    }
+    #footer {
+        order: 5;
+    }
+    #right {
+        order: 2;
+    }
+
 }
 
 @media (max-width: 768px) and (max-width:992px){
     .container{
         width: 100%;
+    }
+    #paragraf {
+        order:2;
+        flex-basis: 100%;
+    }
+    #right {
+        order:4;
+        flex-basis: 100%;
     }
 }
